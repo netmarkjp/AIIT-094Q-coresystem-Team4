@@ -1,0 +1,91 @@
+<p>
+  <b>Sex:</b>
+  <%=h @regist.sex %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @regist.name %>
+</p>
+
+<p>
+  <b>Nickname:</b>
+  <%=h @regist.nickname %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%=h @regist.age %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%=h @regist.height %>
+</p>
+
+<p>
+  <b>Weight:</b>
+  <%=h @regist.weight %>
+</p>
+
+<p>
+  <b>Job:</b>
+  <%=h @regist.job %>
+</p>
+
+<p>
+  <b>Income:</b>
+  <%=h @regist.income %>
+</p>
+
+<p>
+  <b>Local:</b>
+  <%=h @regist.local %>
+</p>
+
+<p>
+  <b>Motivation:</b>
+  <%=h @regist.motivation %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @regist.email %>
+</p>
+
+<p>
+  <b>Favorite character:</b>
+  <%=h @regist.favorite_character %>
+</p>
+
+<p>
+  <b>Member:</b>
+  <%=h @regist.member_id %>
+</p>
+
+<p>
+  <b>Regist date:</b>
+  <%=h @regist.regist_date %>
+</p>
+
+<p>
+  <b>Exit date:</b>
+  <%=h @regist.exit_date %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%=h @regist.password %>
+</p>
+
+<% form_tag(:controller=>"", :action => "") do%>
+    <!-- 規約に同意する処理を実装 -->
+    <!-- tokenを実装 -->
+    <%= submit_tag "やめとく" %>
+<% end %>
+
+<% form_tag(:action => "complete") do%>
+    <!-- 規約に同意する処理を実装 -->
+    <!-- tokenを実装 -->
+    <%= submit_tag "登録する" %>
+<% end %>

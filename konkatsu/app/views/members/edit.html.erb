@@ -1,0 +1,76 @@
+<h1>Editing member</h1>
+
+<% form_for(@member) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :sex %><br />
+    <%= f.text_field :sex %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :nickname %><br />
+    <%= f.text_field :nickname %>
+  </p>
+  <p>
+    <%= f.label :age %><br />
+    <%= f.text_field :age %>
+  </p>
+  <p>
+    <%= f.label :height %><br />
+    <%= f.text_field :height %>
+  </p>
+  <p>
+    <%= f.label :weight %><br />
+    <%= f.text_field :weight %>
+  </p>
+  <p>
+    <%= f.label :job %><br />
+    <%= f.text_field :job %>
+  </p>
+  <p>
+    <%= f.label :income %><br />
+    <%= f.text_field :income %>
+  </p>
+  <p>
+    <%= f.label :local %><br />
+    <%= f.text_field :local %>
+  </p>
+  <p>
+    <%= f.label :motivation %><br />
+    <%= f.text_field :motivation %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :favorite_character %><br />
+    <%= f.text_field :favorite_character %>
+  </p>
+  <p>
+    <%= f.label :member_id %><br />
+    <%= f.text_field :member_id %>
+  </p>
+  <p>
+    <%= f.label :regist_date %><br />
+    <%= f.datetime_select :regist_date %>
+  </p>
+  <p>
+    <%= f.label :exit_date %><br />
+    <%= f.datetime_select :exit_date %>
+  </p>
+  <p>
+    <%= f.label :password %><br />
+    <%= f.text_field :password %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @member %> |
+<%= link_to 'Back', members_path %>

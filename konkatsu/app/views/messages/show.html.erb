@@ -1,0 +1,28 @@
+<p>
+  <b>Message:</b>
+  <%=h @message.message_id %>
+</p>
+
+<p>
+  <b>From member:</b>
+  <%=h @message.from_member_id %>
+</p>
+
+<p>
+  <b>To member:</b>
+  <%=h @message.to_member_id %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%=h @message.body %>
+</p>
+
+<p>
+  <b>Send date:</b>
+  <%=h @message.send_date %>
+</p>
+
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>
