@@ -1,0 +1,11 @@
+<h1>退会</h1>
+
+しますか！？
+
+<% form_tag("/", :method => "GET") do%>
+    <%= submit_tag "やめとく" %>
+<% end %>
+
+<% form_tag(:action => "complete") do%>
+    <%= submit_tag "退会する" %>
+<% end %>

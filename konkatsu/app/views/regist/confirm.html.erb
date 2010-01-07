@@ -78,14 +78,11 @@
   <%=h @regist.password %>
 </p>
 
-<% form_tag(:controller=>"", :action => "") do%>
-    <!-- 規約に同意する処理を実装 -->
-    <!-- tokenを実装 -->
+<% form_tag("/", :method => "get") do%>
     <%= submit_tag "やめとく" %>
 <% end %>
 
 <% form_tag(:action => "complete") do%>
     <!-- 規約に同意する処理を実装 -->
-    <!-- tokenを実装 -->
     <%= submit_tag "登録する" %>
 <% end %>

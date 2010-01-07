@@ -1,0 +1,768 @@
+# Logfile created on Thu Jan 07 19:04:39 +0900 2010
+
+Processing RegistController#index (for 127.0.0.1 at 2010-01-07 19:04:52) [GET]
+Rendering regist/index
+Completed in 138ms (View: 119, DB: 0) | 200 OK [http://localhost/regist/]
+
+
+Processing RegistController#confirm (for 127.0.0.1 at 2010-01-07 19:05:10) [POST]
+  Parameters: {"commit"=>"確認画面へ", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0", "member"=>{"motivation"=>"", "local"=>"", "name"=>"", "regist_date(1i)"=>"2010", "member_id"=>"", "regist_date(2i)"=>"1", "nickname"=>"", "exit_date(1i)"=>"2010", "regist_date(3i)"=>"7", "weight"=>"", "exit_date(2i)"=>"1", "regist_date(4i)"=>"10", "exit_date(3i)"=>"7", "regist_date(5i)"=>"04", "favorite_character"=>"", "sex"=>"", "exit_date(4i)"=>"10", "income"=>"", "job"=>"", "height"=>"", "exit_date(5i)"=>"04", "password"=>"", "age"=>"", "email"=>""}}
+Rendering regist/index
+Completed in 101ms (View: 58, DB: 0) | 200 OK [http://localhost/regist/confirm]
+
+
+Processing RegistController#confirm (for 127.0.0.1 at 2010-01-07 19:05:35) [POST]
+  Parameters: {"commit"=>"確認画面へ", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0", "member"=>{"motivation"=>"", "local"=>"", "name"=>"きざき", "regist_date(1i)"=>"2010", "member_id"=>"", "regist_date(2i)"=>"1", "nickname"=>"ざっきー", "exit_date(1i)"=>"2010", "regist_date(3i)"=>"7", "weight"=>"100", "exit_date(2i)"=>"1", "regist_date(4i)"=>"10", "exit_date(3i)"=>"7", "regist_date(5i)"=>"04", "favorite_character"=>"", "sex"=>"", "exit_date(4i)"=>"10", "income"=>"200", "job"=>"", "height"=>"100", "exit_date(5i)"=>"04", "password"=>"", "age"=>"26", "email"=>""}}
+Rendering regist/index
+Completed in 82ms (View: 56, DB: 0) | 200 OK [http://localhost/regist/confirm]
+
+
+Processing RegistController#confirm (for 127.0.0.1 at 2010-01-07 19:05:47) [POST]
+  Parameters: {"commit"=>"確認画面へ", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0", "member"=>{"motivation"=>"", "local"=>"", "name"=>"きざき", "regist_date(1i)"=>"2010", "member_id"=>"", "regist_date(2i)"=>"1", "nickname"=>"ざっきー", "exit_date(1i)"=>"2010", "regist_date(3i)"=>"7", "weight"=>"100", "exit_date(2i)"=>"1", "regist_date(4i)"=>"10", "exit_date(3i)"=>"7", "regist_date(5i)"=>"04", "favorite_character"=>"", "sex"=>"", "exit_date(4i)"=>"10", "income"=>"200", "job"=>"学生", "height"=>"100", "exit_date(5i)"=>"04", "password"=>"", "age"=>"26", "email"=>""}}
+Rendering regist/confirm
+Completed in 31ms (View: 10, DB: 0) | 200 OK [http://localhost/regist/confirm]
+
+
+Processing RegistController#index (for 127.0.0.1 at 2010-01-07 19:05:52) [POST]
+  Parameters: {"commit"=>"やめとく", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0"}
+Rendering regist/index
+Completed in 73ms (View: 61, DB: 0) | 200 OK [http://localhost/regist/]
+
+
+Processing RegistController#complete (for 127.0.0.1 at 2010-01-07 19:05:56) [POST]
+  Parameters: {"commit"=>"登録する", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0"}
+  [4;36;1mMember Create (6.3ms)[0m   [0;1mINSERT INTO "members" ("name", "local", "motivation", "created_at", "member_id", "nickname", "regist_date", "updated_at", "weight", "exit_date", "sex", "favorite_character", "height", "job", "income", "age", "password", "email") VALUES('きざき', '', '', '2010-01-07 10:05:56', '', 'ざっきー', '2010-01-07 10:04:00', '2010-01-07 10:05:56', '100', '2010-01-07 10:04:00', '', '', '100', '学生', '200', '26', '', '')[0m
+Redirected to /mypage
+Completed in 35ms (DB: 6) | 302 Found [http://localhost/regist/complete]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-07 19:05:56) [GET]
+
+
+ActionController::RoutingError (No route matches "/mypage" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:103:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:60:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/baba/Dropbox/project/AIIT-094Q-coresystem-Team4/konkatsu/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-01-07 19:06:08) [GET]
+  [4;35;1mMember Load (3.0ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/members
+Rendering members/index
+Completed in 168ms (View: 51, DB: 3) | 200 OK [http://localhost/members/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-01-07 19:16:02) [GET]
+  [4;36;1mMember Load (3.1ms)[0m   [0;1mSELECT * FROM "members" [0m
+Rendering template within layouts/members
+Rendering members/index
+Completed in 69ms (View: 50, DB: 3) | 200 OK [http://localhost/members/]
+
+
+Processing MembersController#index (for 127.0.0.1 at 2010-01-07 19:16:04) [GET]
+  [4;35;1mMember Load (2.9ms)[0m   [0mSELECT * FROM "members" [0m
+Rendering template within layouts/members
+Rendering members/index
+Completed in 71ms (View: 50, DB: 3) | 200 OK [http://localhost/members/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-07 19:32:41) [GET]
+
+
+ActionController::RoutingError (No route matches "/deregist/" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:66:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:390:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:183:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:103:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:60:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/baba/Dropbox/project/AIIT-094Q-coresystem-Team4/konkatsu/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:33:02) [GET]
+Rendering deregist/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/deregist/]
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:33:13) [GET]
+Rendering deregist/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/deregist/]
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:33:15) [POST]
+  Parameters: {"commit"=>"やめとく", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0"}
+Rendering deregist/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/deregist/]
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:33:17) [POST]
+  Parameters: {"commit"=>"やめとく", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0"}
+Rendering deregist/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/deregist/]
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:33:31) [POST]
+  Parameters: {"commit"=>"やめとく", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0"}
+Rendering deregist/index
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/deregist/]
+
+
+Processing DeregistController#/ (for 127.0.0.1 at 2010-01-07 19:33:33) [POST]
+  Parameters: {"commit"=>"やめとく", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0"}
+
+
+ActionController::UnknownAction (No action responded to /. Actions: complete and index):
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:103:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:60:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/baba/Dropbox/project/AIIT-094Q-coresystem-Team4/konkatsu/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing DeregistController#/ (for 127.0.0.1 at 2010-01-07 19:34:05) [POST]
+  Parameters: {"commit"=>"やめとく", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0"}
+
+
+ActionController::UnknownAction (No action responded to /. Actions: complete and index):
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:103:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:60:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /home/baba/Dropbox/project/AIIT-094Q-coresystem-Team4/konkatsu/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:34:09) [POST]
+  Parameters: {"commit"=>"やめとく", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0"}
+Rendering deregist/index
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/deregist/]
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:34:11) [POST]
+  Parameters: {"commit"=>"やめとく", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0"}
+Rendering deregist/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/deregist/]
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:34:11) [POST]
+  Parameters: {"commit"=>"やめとく", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0"}
+Rendering deregist/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/deregist/]
+
+
+Processing DeregistController#complete (for 127.0.0.1 at 2010-01-07 19:34:14) [POST]
+  Parameters: {"commit"=>"退会する", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0"}
+
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.delete):
+    /app/controllers/deregist_controller.rb:8:in `complete'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1256:in `perform_action_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    /vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:103:in `handle_dispatch'
+    /vendor/rails/railties/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    /vendor/rails/railties/lib/webrick_server.rb:60:in `dispatch'
+    /vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/baba/Dropbox/project/AIIT-094Q-coresystem-Team4/konkatsu/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (33.6ms)
+Rendered /home/baba/Dropbox/project/AIIT-094Q-coresystem-Team4/konkatsu/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (2.7ms)
+Rendering /home/baba/Dropbox/project/AIIT-094Q-coresystem-Team4/konkatsu/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:34:20) [POST]
+  Parameters: {"commit"=>"やめとく", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0"}
+Rendering deregist/index
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/deregist/]
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:36:17) [POST]
+  Parameters: {"commit"=>"やめとく", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0"}
+Rendering deregist/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/deregist/]
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:36:40) [POST]
+  Parameters: {"commit"=>"やめとく", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0"}
+Rendering deregist/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/deregist/]
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:36:40) [GET]
+Rendering deregist/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/deregist/]
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:37:00) [POST]
+  Parameters: {"commit"=>"やめとく", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0"}
+Rendering deregist/index
+
+
+ActionView::TemplateError (undefined local variable or method `url' for #<ActionView::Base:0xb6eaf9b4>) on line #5 of app/views/deregist/index.html.erb:
+2: 
+3: しますか！？
+4: 
+5: <% form_tag(url => {:action => "/"}, :method => "GET") do%>
+6:     <%= submit_tag "やめとく" %>
+7: <% end %>
+8: 
+
+    app/views/deregist/index.html.erb:5
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `send'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:73:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:256:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1251:in `default_render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1257:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    vendor/rails/railties/lib/webrick_server.rb:103:in `handle_dispatch'
+    vendor/rails/railties/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    vendor/rails/railties/lib/webrick_server.rb:60:in `dispatch'
+    vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/baba/Dropbox/project/AIIT-094Q-coresystem-Team4/konkatsu/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (138.0ms)
+Rendered /home/baba/Dropbox/project/AIIT-094Q-coresystem-Team4/konkatsu/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (1.9ms)
+Rendering /home/baba/Dropbox/project/AIIT-094Q-coresystem-Team4/konkatsu/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:37:01) [GET]
+Rendering deregist/index
+
+
+ActionView::TemplateError (undefined local variable or method `url' for #<ActionView::Base:0xb704c1a0>) on line #5 of app/views/deregist/index.html.erb:
+2: 
+3: しますか！？
+4: 
+5: <% form_tag(url => {:action => "/"}, :method => "GET") do%>
+6:     <%= submit_tag "やめとく" %>
+7: <% end %>
+8: 
+
+    app/views/deregist/index.html.erb:5
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `send'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:73:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:256:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1251:in `default_render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1257:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    vendor/rails/railties/lib/webrick_server.rb:103:in `handle_dispatch'
+    vendor/rails/railties/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    vendor/rails/railties/lib/webrick_server.rb:60:in `dispatch'
+    vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/baba/Dropbox/project/AIIT-094Q-coresystem-Team4/konkatsu/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (41.7ms)
+Rendered /home/baba/Dropbox/project/AIIT-094Q-coresystem-Team4/konkatsu/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (1.4ms)
+Rendering /home/baba/Dropbox/project/AIIT-094Q-coresystem-Team4/konkatsu/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:37:10) [POST]
+  Parameters: {"commit"=>"やめとく", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0"}
+Rendering deregist/index
+
+
+ActionView::TemplateError (undefined local variable or method `url_options' for #<ActionView::Base:0xb6ee8fc0>) on line #5 of app/views/deregist/index.html.erb:
+2: 
+3: しますか！？
+4: 
+5: <% form_tag(url_options => {:action => "/"}, :method => "GET") do%>
+6:     <%= submit_tag "やめとく" %>
+7: <% end %>
+8: 
+
+    app/views/deregist/index.html.erb:5
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `send'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:73:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:256:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1251:in `default_render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1257:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    vendor/rails/railties/lib/webrick_server.rb:103:in `handle_dispatch'
+    vendor/rails/railties/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    vendor/rails/railties/lib/webrick_server.rb:60:in `dispatch'
+    vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/baba/Dropbox/project/AIIT-094Q-coresystem-Team4/konkatsu/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (135.3ms)
+Rendered /home/baba/Dropbox/project/AIIT-094Q-coresystem-Team4/konkatsu/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (1.7ms)
+Rendering /home/baba/Dropbox/project/AIIT-094Q-coresystem-Team4/konkatsu/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:37:10) [GET]
+Rendering deregist/index
+
+
+ActionView::TemplateError (undefined local variable or method `url_options' for #<ActionView::Base:0xb7035504>) on line #5 of app/views/deregist/index.html.erb:
+2: 
+3: しますか！？
+4: 
+5: <% form_tag(url_options => {:action => "/"}, :method => "GET") do%>
+6:     <%= submit_tag "やめとく" %>
+7: <% end %>
+8: 
+
+    app/views/deregist/index.html.erb:5
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `send'
+    vendor/rails/actionpack/lib/action_view/renderable.rb:39:in `render'
+    vendor/rails/actionpack/lib/action_view/template.rb:73:in `render_template'
+    vendor/rails/actionpack/lib/action_view/base.rb:256:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1177:in `render_for_file'
+    vendor/rails/actionpack/lib/action_controller/base.rb:896:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:868:in `render_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/activesupport/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1251:in `default_render'
+    vendor/rails/actionpack/lib/action_controller/base.rb:1257:in `perform_action_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:617:in `call_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    vendor/rails/actionpack/lib/action_controller/rescue.rb:136:in `perform_action_without_caching'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+    vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `send'
+    vendor/rails/actionpack/lib/action_controller/base.rb:524:in `process_without_filters'
+    vendor/rails/actionpack/lib/action_controller/filters.rb:606:in `process_without_session_management_support'
+    vendor/rails/actionpack/lib/action_controller/session_management.rb:134:in `process'
+    vendor/rails/actionpack/lib/action_controller/base.rb:392:in `process'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:184:in `handle_request'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:112:in `dispatch_unlocked'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `synchronize'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:124:in `dispatch'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:134:in `dispatch_cgi'
+    vendor/rails/actionpack/lib/action_controller/dispatcher.rb:41:in `dispatch'
+    vendor/rails/railties/lib/webrick_server.rb:103:in `handle_dispatch'
+    vendor/rails/railties/lib/webrick_server.rb:74:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+    vendor/rails/railties/lib/webrick_server.rb:60:in `dispatch'
+    vendor/rails/railties/lib/commands/servers/webrick.rb:66
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:521:in `new_constants_in'
+    vendor/rails/activesupport/lib/active_support/dependencies.rb:153:in `require'
+    vendor/rails/railties/lib/commands/server.rb:49
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendered /home/baba/Dropbox/project/AIIT-094Q-coresystem-Team4/konkatsu/vendor/rails/actionpack/lib/action_controller/templates/rescues/_trace (41.3ms)
+Rendered /home/baba/Dropbox/project/AIIT-094Q-coresystem-Team4/konkatsu/vendor/rails/actionpack/lib/action_controller/templates/rescues/_request_and_response (1.4ms)
+Rendering /home/baba/Dropbox/project/AIIT-094Q-coresystem-Team4/konkatsu/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:38:31) [POST]
+  Parameters: {"commit"=>"やめとく", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0"}
+Rendering deregist/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/deregist/]
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:38:32) [GET]
+Rendering deregist/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/deregist/]
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:38:56) [POST]
+  Parameters: {"commit"=>"やめとく", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0"}
+Rendering deregist/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/deregist/]
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:38:56) [GET]
+Rendering deregist/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/deregist/]
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:39:28) [POST]
+  Parameters: {"commit"=>"やめとく", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0"}
+Rendering deregist/index
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/deregist/]
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:39:28) [GET]
+Rendering deregist/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/deregist/]
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:39:42) [POST]
+  Parameters: {"commit"=>"やめとく", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0"}
+Rendering deregist/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/deregist/]
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:39:43) [GET]
+Rendering deregist/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/deregist/]
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:40:32) [POST]
+  Parameters: {"commit"=>"やめとく", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0"}
+Rendering deregist/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/deregist/]
+
+
+Processing DeregistController#index (for 127.0.0.1 at 2010-01-07 19:40:32) [GET]
+Rendering deregist/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/deregist/]
+
+
+Processing RegistController#confirm (for 127.0.0.1 at 2010-01-07 19:40:46) [POST]
+  Parameters: {"commit"=>"確認画面へ", "authenticity_token"=>"a4ac6329e8a01ac737de6570fd14c30f674309e0", "member"=>{"motivation"=>"", "local"=>"", "name"=>"きざき", "regist_date(1i)"=>"2010", "member_id"=>"", "regist_date(2i)"=>"1", "nickname"=>"ざっきー", "exit_date(1i)"=>"2010", "regist_date(3i)"=>"7", "weight"=>"100", "exit_date(2i)"=>"1", "regist_date(4i)"=>"10", "exit_date(3i)"=>"7", "regist_date(5i)"=>"04", "favorite_character"=>"", "sex"=>"", "exit_date(4i)"=>"10", "income"=>"200", "job"=>"学生", "height"=>"100", "exit_date(5i)"=>"04", "password"=>"", "age"=>"26", "email"=>""}}
+Rendering regist/confirm
+Completed in 99ms (View: 8, DB: 0) | 200 OK [http://localhost/regist/confirm]
+
+
+Processing RegistController#confirm (for 127.0.0.1 at 2010-01-07 19:40:46) [GET]
+Rendering regist/index
+Completed in 93ms (View: 57, DB: 0) | 200 OK [http://localhost/regist/confirm]
+
+
+Processing RegistController#confirm (for 127.0.0.1 at 2010-01-07 19:40:59) [GET]
+Rendering regist/index
+Completed in 94ms (View: 56, DB: 0) | 200 OK [http://localhost/regist/confirm]
