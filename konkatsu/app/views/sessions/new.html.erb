@@ -1,0 +1,22 @@
+<p class="border"><strong>ログイン</strong></p>
+<% form_tag session_path do -%>
+<p><label for="login">Member ID</label><br/>
+<%= text_field_tag 'login' %></p>
+
+<p><label for="password">Password</label><br/>
+<%= password_field_tag 'password' %></p>
+
+<!-- Uncomment this if you want this functionality
+<p><label for="remember_me">Remember me:</label>
+<%= check_box_tag 'remember_me' %></p>
+-->
+<br/>
+<p><%= submit_tag 'ログイン' %></p>
+<% end -%>
+<br/><br/>
+<% form_tag :controller => "signup" do -%>
+
+<p class="border"><strong>登録がお済みでない方はこちら</strong></p>
+<p><%= submit_tag '登録' %></p>
+
+<% end -%>

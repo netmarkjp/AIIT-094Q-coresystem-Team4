@@ -1,0 +1,254 @@
+
+body {
+text-align: center;
+background-color:#FFFFFF;/*全体の背景色-----------------*/
+font-family: Osaka,Verdana,Arial,Helvetica,sans-serif;
+font-size:12px;/*基本の文字サイズ-----------------*/
+line-height:170%;
+color:#777777;/*基本の文字色-----------------*/
+margin-top:20px;/*コンテンツボックスを上から少し離しています-----------------*/
+margin-bottom:0px;
+margin-left:0;
+margin-right:0;
+}
+
+
+
+/*テキストリンクの色*/
+a:link    {text-decoration:underline;color:#8e5a47;} 
+
+/*訪問済みのリンクの色*/ 
+a:visited {text-decoration:underline;color:#8e5a47;}  
+
+/*クリック時のリンクの色*/
+a:active  {text-decoration:underline;color:#8e5a47;}  
+
+/*マウスの上にカーソルがあるときのリンクの色*/
+a:hover   {text-decoration:underline;color:#8e5a47;}  
+
+
+
+ /*サイトタイトルテキストリンクの色*/
+h1 a:link     {color:#855d51;text-decoration:none;} 
+
+/*左メニュー・訪問済みのリンクの色*/
+h1 a:visited  {color:#855d51;text-decoration:none;}  
+
+/*左メニュー・クリック時のリンクの色*/ 
+h1 a:active   {color:#855d51;text-decoration:underline;}
+
+/*左メニュー・マウスの上にカーソルがあるときのリンクの色*/  
+h1 a:hover    {color:#855d51;text-decoration:underline;}  
+
+
+
+/*メニュー・テキストリンクの色*/
+#menu a:link    {font-size:13px;color:#777777;text-decoration:none;} 
+
+/*左メニュー・訪問済みのリンクの色*/
+#menu a:visited {font-size:13px;color:#777777;text-decoration:none;}  
+
+/*左メニュー・クリック時のリンクの色*/
+#menu a:active  {font-size:13px;color:#8e5a47;text-decoration:underline;}  
+
+/*左メニュー・マウスの上にカーソルがあるときのリンクの色*/
+#menu a:hover   {font-size:13px;color:#8e5a47;text-decoration:underline;}    
+
+
+
+h1,h2,h3 {
+margin:0px;
+padding:0px;
+font-weight:normal;
+}
+
+
+/*pタグ空白消去*/
+p {
+margin:0px;
+padding:0px;
+}
+
+
+/*IMGボーダー非表示*/
+img  {
+border: none;
+vertical-align:top;
+}
+
+
+
+/*TABLEボーダー非表示*/
+table  {
+border:none;
+}
+
+
+/*IE--BRバグ回避*/
+br  {
+letter-spacing:normal;
+}
+
+
+/*リスト空白消去*/
+ul,ol,li  {
+margin:0px;
+padding:0px;
+list-style:none;
+}
+
+
+
+
+#pagebody{
+width:816px;
+margin:0 auto;
+text-align:left;
+}
+
+
+
+#header{
+padding:0px;
+margin:0px;
+}
+
+
+#menu{
+background-color:#FFBBBB;/*メニュー部分背景色-----------------*/
+text-align:center;
+float:left;
+position:relative;
+display:block;
+border-left:#adadad solid 1px;
+width:816px;
+}
+
+
+#menu ul{
+margin:0;
+padding:0
+}
+
+
+
+#menu li{
+padding:6px;
+float:left;
+border-top:#adadad solid 1px;
+border-right:#adadad solid 1px;
+border-bottom:#adadad solid 1px;
+width:150px;
+overflow:hidden
+}
+
+
+
+#wrapper{
+clear:both;
+border-bottom:#adadad solid 1px;
+border-left:#adadad solid 1px;
+border-right:#adadad solid 1px;
+background-color:#fffefe;/*メインコンテンツ背景色-----------------*/
+position:relative;
+float:left;
+margin-bottom:4px;
+width:814px;
+}
+
+
+#title{
+padding:35px 35px;
+}
+
+
+ /* メインタイトルのフォントサイズ,色*/
+h1    {
+font-size:26px;/*タイトル部分文字サイズ-----------------*/
+color:#855d51;/*タイトル部分文字色-----------------*/
+text-decoration:none;
+font-weight:bold;
+} 
+
+
+ /* トップページ左エリア*/
+#top_left{
+float:left;
+text-align:left;
+width:290px;
+padding-left:35px;
+}
+
+
+ /* トップページ右エリア*/
+#main{
+float:right;
+text-align:left;
+width:429px;
+padding-right:35px;
+}
+
+
+ /* トップページNEWS文字の下直線*/
+.border{
+border-bottom:#adadad solid 1px;
+padding-bottom:4px;
+margin-bottom:8px;
+}
+
+
+ /* トップページNEWS点線つきのリスト*/
+.news{
+padding-bottom:40px;
+} 
+ 
+.news li{
+border-bottom:#adadad dotted 1px;
+padding-bottom:4px;
+margin-bottom:8px;
+}
+
+
+
+
+ /* 下層ページコンテンツ*/
+#kasou_contents{
+margin:0px 35px 35px 35px;
+padding:25px;
+background-color:#FFFFFF;/*下層ページコンテンツ背景色白-----------------*/
+position:relative;
+}
+
+
+ /*ページタイトル指定*/
+#page_title{
+border-bottom:#ba8776 solid 3px;/*下の線-----------------*/
+font-size:18px;/*文字の大きさ-----------------*/
+color:#855d51;/*タイトル文字の色-----------------*/
+font-weight:bold;
+padding-bottom:6px;
+margin-bottom:15px;
+}
+
+
+
+
+ /* 文章*/
+.text{
+margin:4px;
+}
+
+
+
+
+ /* コピーライト*/
+#copyright{
+text-align:center;
+font-size:7pt;
+margin-bottom:25px;
+margin-right:8px;
+}
+
+
+
+

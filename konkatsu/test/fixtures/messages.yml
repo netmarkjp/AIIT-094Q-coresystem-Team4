@@ -5,11 +5,11 @@ one:
   from_member_id: MyString
   to_member_id: MyString
   body: MyText
-  send_date: 2010-01-03 15:23:23
+  send_date: 2009-12-19 05:40:34
 
 two:
   message_id: MyString
   from_member_id: MyString
   to_member_id: MyString
   body: MyText
-  send_date: 2010-01-03 15:23:23
+  send_date: 2009-12-19 05:40:34

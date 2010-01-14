@@ -1,17 +1,88 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  <title>Members: <%= controller.action_name %></title>
-  <%= stylesheet_link_tag 'scaffold' %>
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+
+<title>テンプレート　#4-BROWN　テンプレートとフリー素材のWEB MAGIC</title>
+<%= stylesheet_link_tag 'style' %>
 </head>
-<body>
 
-<p style="color: green"><%= flash[:notice] %></p>
 
+
+<body> 
+<div id="pagebody">
+
+<div id="header">
+<!--トップページ画像↓******************************** -->
+<img src="images/photo.jpg" alt="" width="816" height="184" />
+<!--トップページ画像↑******************************** -->
+</div>
+
+
+
+
+
+<!--ナビゲーションここから******************************** -->
+<div id="menu">
+<ul>
+<li class="left"><a href="index.html">ホーム</a></li>
+<li><a href="kasou.html">検索</a></li>
+<li><a href="kasou.html">メール</a></li>
+<li><a href="kasou.html">プロフィール</a></li>
+<li><a href="kasou.html">設定</a></li>
+</ul>
+</div>
+<!--ナビゲーションここまで******************************** -->
+
+
+
+
+
+<div id="wrapper">
+
+<div id="title">
+<!--サイトタイトル******************************** -->
+<h1><a href="index.html">LINK #4</a></h1>
+</div>
+
+
+<!--左側ブロック******************************** -->
+<div id="top_left"></div>
+
+
+<!--右側ブロック******************************** -->
+<div id="main">
 <%= yield  %>
+<br />
+
+
+<!--NEWSブロック******************************** -->
+<div class="news">
+<!--点線の下線付きリスト******************************** -->
+</div>
+
+</div>
+</div>
+
+
+
+<br clear="all" />
+
+
+<!--商用サイトはここから削除できません *************************************************-->
+<div id="copyright">
+Copyright（c）2009 サイト名を入れてください All rights reserved.</div>
+<!--商用サイトはここまで削除できません *************************************************-->
+
+
+</div>
+
+
+
 
 </body>
 </html>

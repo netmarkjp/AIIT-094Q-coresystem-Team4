@@ -1,72 +1,88 @@
 <h1>Editing member</h1>
 
-<% form_for(@member) do |f| %>
-  <%= f.error_messages %>
+<%= error_messages_for :member %>
 
+<% form_for(@member) do |f| %>
   <p>
-    <%= f.label :sex %><br />
+    <b>Sex</b><br />
     <%= f.text_field :sex %>
   </p>
+
   <p>
-    <%= f.label :name %><br />
+    <b>Name</b><br />
     <%= f.text_field :name %>
   </p>
+
   <p>
-    <%= f.label :nickname %><br />
+    <b>Nickname</b><br />
     <%= f.text_field :nickname %>
   </p>
+
   <p>
-    <%= f.label :age %><br />
+    <b>Age</b><br />
     <%= f.text_field :age %>
   </p>
+
   <p>
-    <%= f.label :height %><br />
+    <b>Height</b><br />
     <%= f.text_field :height %>
   </p>
+
   <p>
-    <%= f.label :weight %><br />
+    <b>Weight</b><br />
     <%= f.text_field :weight %>
   </p>
+
   <p>
-    <%= f.label :job %><br />
+    <b>Job</b><br />
     <%= f.text_field :job %>
   </p>
+
   <p>
-    <%= f.label :income %><br />
+    <b>Income</b><br />
     <%= f.text_field :income %>
   </p>
+
   <p>
-    <%= f.label :local %><br />
+    <b>Local</b><br />
     <%= f.text_field :local %>
   </p>
+
   <p>
-    <%= f.label :motivation %><br />
+    <b>Motivation</b><br />
     <%= f.text_field :motivation %>
   </p>
+
   <p>
-    <%= f.label :email %><br />
+    <b>Email</b><br />
     <%= f.text_field :email %>
   </p>
+
   <p>
-    <%= f.label :favorite_character %><br />
+    <b>Favorite character</b><br />
     <%= f.text_field :favorite_character %>
   </p>
+
   <p>
-    <%= f.label :member_id %><br />
+    <b>Member</b><br />
     <%= f.text_field :member_id %>
   </p>
+
   <p>
-    <%= f.label :regist_date %><br />
+    <b>Regist date</b><br />
     <%= f.datetime_select :regist_date %>
   </p>
+
   <p>
-    <%= f.label :exit_date %><br />
+    <b>Exit date</b><br />
     <%= f.datetime_select :exit_date %>
   </p>
+
   <p>
-    <%= f.label :password %><br />
+    <b>Password</b><br />
     <%= f.text_field :password %>
   </p>
+
   <p>
     <%= f.submit "Update" %>
   </p>

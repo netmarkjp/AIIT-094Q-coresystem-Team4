@@ -1,0 +1,100 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/html_Transitional_sub_euc_b.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-31J">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>検索フォーム</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+
+</head>
+
+<body bgcolor="pink" background="<%= url_for(:controller=>"images", :action => "happywedding.gif") %>">
+<br>
+<center>
+	
+<form action="/search/search_result"  method="post">
+
+<table width="500" bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0">
+	
+
+
+	
+<a name="searchform" id="searchform"></a><h1><img src="<%= url_for(:controller=>"images", :action => "t_search.jpg") %>" alt="独身者限定 無料 パートナー検索" width="500" height="70"></h1>
+<img src="<%= url_for(:controller=>"images", :action => "br_034.jpg") %>" alt="konkatsu1" width="500" />
+<tr>
+<td width="8" height="151" valign="top" bgcolor="#FFF3F4">
+<td width="484" rowspan="2" valign="top">
+<table width="484" height="315" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<table width="320" border="0" cellspacing="0" cellpadding="0" id="formtable1">
+<tr>
+<td height="32" valign="top">
+<img src="<%= url_for(:controller=>"images", :action => "search_t1.gif") %>" alt="あなたの性別は？" width="117" height="15" style="margin-right:20px;">
+
+<input name="sex" id="sex" type="radio" value="1" checked ><a href="javascript:void(0)" class="label" onClick="labelClick(form1.q13m)">男性</a>
+<input name="sex" id="sex" type="radio" value="2"  ><a href="javascript:void(0)" class="label" onClick="labelClick(form1.q13f)">女性</a></td>
+</tr>
+<tr>
+<td height="28" valign="top"><img src="<%= url_for(:controller=>"images", :action => "search_t2.gif") %>" alt="お相手の希望プロフィールを入力してね♪" width="284" height="15"></td>
+</tr>
+</table>
+<table width="320" border="0" cellspacing="0" cellpadding="0" id="formtable2">
+<tr>
+<th nowrap scope="row">年齢</th>
+<td class="space"><input class="text" name="age1" type="text" size="6" value="" >～<input class="text" name="age2" type="text" size="6" value="" >歳</td>
+<td nowrap>&nbsp;</td>
+</tr>
+<tr>
+<th nowrap scope="row">身長</th>
+<td class="space"><input class="text" name="height1" type="text" size="6" value="" >～<input class="text" name="height2" type="text" size="6" value="" >cm</td>
+<td nowrap><input type="checkbox" name="q0506none" id="q0506none" value="1"  ><a href="javascript:void(0)" class="label" onClick="labelClick(form1.q0506none)">問わない</a></td>
+</tr>
+<tr>
+<th nowrap scope="row">体重</th>
+<td class="space"><input class="text" name="wight1" type="text" size="6" value="" >～<input class="text" name="wight2" type="text" size="6" value="" >kg</td>
+<td nowrap><input type="checkbox" name="q0506none" id="q0506none" value="1"  ><a href="javascript:void(0)" class="label" onClick="labelClick(form1.q0506none)">問わない</a></td>
+</tr>
+<tr>
+<th nowrap scope="row">性格</th>
+<td class="space"><input class="text" name="chara" type="text" size="30" maxlength="50" value=""></td>
+<td nowrap><input type="checkbox" name="q40none" id="q40none" value="1"  ><a href="javascript:void(0)" class="label" onClick="labelClick(form1.q40none)">問わない</a></td>
+</tr>
+<tr>
+<th nowrap scope="row">趣味</th>
+<td class="space"><input class="text" name="hoby" type="text" size="30" maxlength="80"></td>
+<td nowrap><input type="checkbox" name="q41none" id="q41none" value="1"><a href="javascript:void(0)" class="label" onClick="labelClick(form1.q41none)">問わない</a></td>
+</tr>
+<tr>
+<th nowrap scope="row">職業</th>
+<td class="space"><input class="text" name="occupation" type="text" size="30" maxlength="30"></td>
+<td nowrap><input type="checkbox" name="q03none" id="q03none" value="1"><a href="javascript:void(0)" class="label" onClick="labelClick(form1.q03none)">問わない</a></td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+
+<div align="center">
+
+</div></td>
+
+</tr>
+</table>
+<td>
+</tr>
+<tr>
+</tr>
+</table>
+</td>
+</td>
+
+</form>
+</center>
+
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,50 @@
+<h1>Listing members</h1>
+
+<table>
+  <tr>
+    <th>Sex</th>
+    <th>Name</th>
+    <th>Nickname</th>
+    <th>Age</th>
+    <th>Height</th>
+    <th>Weight</th>
+    <th>Job</th>
+    <th>Income</th>
+    <th>Local</th>
+    <th>Motivation</th>
+    <th>Email</th>
+    <th>Favorite character</th>
+    <th>Member</th>
+    <th>Regist date</th>
+    <th>Exit date</th>
+    <th>Password</th>
+  </tr>
+
+<% @members.each do |member| %>
+  <tr>
+    <td><%=h member.sex %></td>
+    <td><%=h member.name %></td>
+    <td><%=h member.nickname %></td>
+    <td><%=h member.age %></td>
+    <td><%=h member.height %></td>
+    <td><%=h member.weight %></td>
+    <td><%=h member.job %></td>
+    <td><%=h member.income %></td>
+    <td><%=h member.local %></td>
+    <td><%=h member.motivation %></td>
+    <td><%=h member.email %></td>
+    <td><%=h member.favorite_character %></td>
+    <td><%=h member.member_id %></td>
+    <td><%=h member.regist_date %></td>
+    <td><%=h member.exit_date %></td>
+    <td><%=h member.password %></td>
+    <td><%= link_to 'Show', member %></td>
+    <td><%= link_to 'Edit', edit_member_path(member) %></td>
+    <td><%= link_to 'Destroy', member, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New member', new_member_path %>

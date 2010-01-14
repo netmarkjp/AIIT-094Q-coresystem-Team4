@@ -1,0 +1,276 @@
+@charset "shift_jis";
+
+/*************************************************/
+/*        スクロールバー                         */
+/*************************************************/
+html {
+	scrollbar-3dlight-color:#f6f8f4;
+	scrollbar-highlight-color:#cad2bc;
+	scrollbar-face-color:#f6f8f4;
+	scrollbar-arrow-color:#cad2bc;
+	scrollbar-shadow-color:#cad2bc;
+	scrollbar-darkshadow-color:#f6f8f4;
+	scrollbar-track-color:#f6f8f4;
+}
+
+/*************************************************/
+/*        レイアウトに関する指定                 */
+/*************************************************/
+body {
+	font-family: "ＭＳ Ｐゴシック",serif,"ＭＳ Ｐ明朝",HG丸ｺﾞｼｯｸM-PRO,キャパニトＭ-教漢,ARゴシック体M;
+	color: #999999;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+
+/*************************************************/
+/*        見出しの設定                           */
+/*************************************************/
+h1,h2,h3,p,ul,li{
+	margin: 0px;
+	padding: 0px;
+}
+
+img {
+	border: none;
+}
+
+/*************************************************/
+/*                  基本リンク                   */
+/*************************************************/
+a:link {
+	color: #66cc66;
+	text-decoration: underline;
+}
+a:visited {
+	color: #99cc66;
+	text-decoration: underline;
+}
+a:hover {
+	color: #669966;
+	text-decoration: underline;
+}
+a:ACTIVE {
+	color: #669933;
+	text-decoration: underline;
+}
+
+/*************************************************/
+/*        ページ全体の指定                       */
+/*************************************************/
+#group {
+	width: 800px;
+	background-image: url(image/page_bg1.gif) ;
+	text-align: center;
+	padding-left: 13px;
+}
+
+#group_under {
+	width: 800px;
+	background-image: url(image/page_bg2.gif) ;
+	text-align: center;
+	padding-left: 13px;
+}
+/*************************************************/
+/*        ヘッダー部分 （写真とサイトロゴ）      */
+/*************************************************/
+#header {
+	width: 780px;
+	height: 200px;
+	background: url(image/top_image1.jpg) ;
+	vertical-align : top;
+	margin-bottom: 1px;
+}
+
+#header h1 {
+	font-size: 13px;
+	color: #ffffff;
+	padding-top: 5px;
+	font-weight: normal;
+}
+
+#top_logo {
+	font-size: 45px;
+	font-family: "HG丸ｺﾞｼｯｸM-PRO";
+	font-weight : bolder;
+	color: #ffffff;
+	padding-top: 60px;
+}
+
+#top_menu {
+	font-size: 12px;
+	color: #ffffff;
+	font-weight: normal;
+	text-align: right;
+	padding-top: 55px;
+	padding-right: 5px;
+}
+
+/*************************************************/
+/*        ナビメニュー                           */
+/*************************************************/
+
+/* ナビメニュー */
+#navi {
+	width: 780px;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+}
+
+/* ナビメニューロールオーバー */
+#navi_menu a{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	width: 129px;
+	color: #ffffff;
+	height: 30px;
+	border-right: 1px solid #ffffff;
+	background: url(image/navi_menu_bg1.gif);
+	padding-top: 15px;
+}
+
+#navi_menu a:hover{
+	color: #ffffff; 
+	background: url(image/navi_menu_bg2.gif);
+}
+
+#navi_menu_last a{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	width: 130px;
+	color: #ffffff;
+	height: 30px;
+	background: url(image/navi_menu_bg1.gif);
+	padding-top: 15px;
+}
+
+#navi_menu_last a:hover{
+	color: #ffffff; 
+	background: url(image/navi_menu_bg2.gif) ;
+}
+
+/*************************************************/
+/*        ページナビ                             */
+/*************************************************/
+#page_navi {
+	color: #666666;
+	font-size: 13px;
+	height: 20px;
+	text-align: left;
+	padding-top:5px;
+	padding-left: 20px;
+}
+
+/*************************************************/
+/*        コンテンツ                             */
+/*************************************************/
+
+#contents {
+	width: 780px;
+	text-align: left;
+	padding: 0px;
+	margin: 0px;
+}
+
+#contents #left {
+	float: left;
+	padding-top: 0px;
+	padding-left: 8px;
+	padding-right: 5px;
+	padding-bottom: 0px; 
+	width: 190px;
+}
+
+#contents #cont {
+	padding-right: 8px;
+	margin: 0 0 0 215px;
+}
+
+#contents .floatclear {
+	clear: left;
+	display: block;
+}
+
+/*************************************************/
+/*        コンテンツ左詳細                       */
+/*************************************************/
+
+#contents #left p {
+	text-align: left;
+	color: #333333;
+	font-size: 14px;
+	font-weight: normal;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/*----------サイドメニュータイトル*/
+#contents #left h3 {
+	text-align: center;
+	color: #ffff00;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: #41780a;
+	padding-top: 7px;
+	padding-bottom: 5px;
+	border-bottom: 5px solid #cccccc;
+}
+
+ul.side_menu {
+	list-style: none;
+}
+
+ul.side_menu li {
+	margin: 0px;
+	padding: 8px 0px 8px 25px;
+	background: #ffffff url(image/list_icon1.gif) left center no-repeat;
+	border-bottom: 1px dotted #999999;
+}
+
+/*************************************************/
+/*        コンテンツの設定                       */
+/*************************************************/
+
+/*----------コンテンツ見出し*/
+#cont h2 {
+	font-size: 14px;
+	color: #41780a;
+	border-bottom: 5px solid #41780a;
+	letter-spacing: 0.1em;
+	padding: 6px 0px 4px 25px;
+	background: url(image/ttl_icon1.gif) no-repeat 8px 9px;
+	background-color: #e1e1e1;
+	margin-bottom: 5px;
+}
+
+#cont p {
+	font-size: 0.8em;
+	color: #333333;
+	line-height: 1.4em;
+}
+
+/*************************************************/
+/*        フッター                               */
+/*************************************************/
+
+#footer {
+	font-size: 13px;
+	color: #666666;
+	text-align: center;
+	padding: 5px;
+}
+
+/*************************************************/
+/*        著作表示                               */
+/*************************************************/
+
+.writing {
+	line-height: 3em;
+	font-size: 13px;
+	color: #999999;
+}
+

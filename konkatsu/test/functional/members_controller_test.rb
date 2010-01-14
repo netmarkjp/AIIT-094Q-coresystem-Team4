@@ -1,45 +1,67 @@
-require 'test_helper'
+require File.dirname(__FILE__) + '/../test_helper'
+require 'members_controller'
 
-class MembersControllerTest < ActionController::TestCase
-  test "should get index" do
-    get :index
-    assert_response :success
-    assert_not_nil assigns(:members)
+# Re-raise errors caught by the controller.
+class MembersController; def rescue_action(e) raise e end; end
+
+class MembersControllerTest < Test::Unit::TestCase
+  # Be sure to include AuthenticatedTestHelper in test/test_helper.rb instead
+  # Then, you can remove it from this and the units test.
+  include AuthenticatedTestHelper
+
+  fixtures :members
+
+  def setup
+    @controller = MembersController.new
+    @request    = ActionController::TestRequest.new
+    @response   = ActionController::TestResponse.new
   end
 
-  test "should get new" do
-    get :new
-    assert_response :success
-  end
-
-  test "should create member" do
-    assert_difference('Member.count') do
-      post :create, :member => { }
+  def test_should_allow_signup
+    assert_difference 'Member.count' do
+      create_member
+      assert_response :redirect
     end
-
-    assert_redirected_to member_path(assigns(:member))
   end
 
-  test "should show member" do
-    get :show, :id => members(:one).id
-    assert_response :success
-  end
-
-  test "should get edit" do
-    get :edit, :id => members(:one).id
-    assert_response :success
-  end
-
-  test "should update member" do
-    put :update, :id => members(:one).id, :member => { }
-    assert_redirected_to member_path(assigns(:member))
-  end
-
-  test "should destroy member" do
-    assert_difference('Member.count', -1) do
-      delete :destroy, :id => members(:one).id
+  def test_should_require_login_on_signup
+    assert_no_difference 'Member.count' do
+      create_member(:login => nil)
+      assert assigns(:member).errors.on(:login)
+      assert_response :success
     end
-
-    assert_redirected_to members_path
   end
+
+  def test_should_require_password_on_signup
+    assert_no_difference 'Member.count' do
+      create_member(:password => nil)
+      assert assigns(:member).errors.on(:password)
+      assert_response :success
+    end
+  end
+
+  def test_should_require_password_confirmation_on_signup
+    assert_no_difference 'Member.count' do
+      create_member(:password_confirmation => nil)
+      assert assigns(:member).errors.on(:password_confirmation)
+      assert_response :success
+    end
+  end
+
+  def test_should_require_email_on_signup
+    assert_no_difference 'Member.count' do
+      create_member(:email => nil)
+      assert assigns(:member).errors.on(:email)
+      assert_response :success
+    end
+  end
+  
+
+  
+
+  protected
+    def create_member(options = {})
+      post :create, :member => { :login => 'quire', :email => 'quire@example.com',
+        :password => 'quire', :password_confirmation => 'quire' }.merge(options)
+    end
 end

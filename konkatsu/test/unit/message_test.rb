@@ -1,8 +1,8 @@
-require 'test_helper'
+require File.dirname(__FILE__) + '/../test_helper'
 
 class MessageTest < ActiveSupport::TestCase
   # Replace this with your real tests.
-  test "the truth" do
+  def test_truth
     assert true
   end
 end

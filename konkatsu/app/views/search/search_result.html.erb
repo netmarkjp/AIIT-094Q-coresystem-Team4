@@ -1,0 +1,84 @@
+<h1>ユーザ検索結果</h1>
+
+<% for member in @members %>
+<p>
+  <b>Sex:</b>
+  <%=h member.sex %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h member.name %>
+</p>
+
+<p>
+  <b>Nickname:</b>
+  <%=h member.nickname %>
+</p>
+
+<p>
+  <b>Age:</b>
+  <%=h member.age %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%=h member.height %>
+</p>
+
+<p>
+  <b>Weight:</b>
+  <%=h member.weight %>
+</p>
+
+<p>
+  <b>Job:</b>
+  <%=h member.job %>
+</p>
+
+<p>
+  <b>Income:</b>
+  <%=h member.income %>
+</p>
+
+<p>
+  <b>Local:</b>
+  <%=h member.local %>
+</p>
+
+<p>
+  <b>Motivation:</b>
+  <%=h member.motivation %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h member.email %>
+</p>
+
+<p>
+  <b>Favorite character:</b>
+  <%=h member.favorite_character %>
+</p>
+
+<p>
+  <b>Member:</b>
+  <%=h member.member_id %>
+</p>
+
+<p>
+  <b>Regist date:</b>
+  <%=h member.regist_date %>
+</p>
+
+<p>
+  <b>Exit date:</b>
+  <%=h member.exit_date %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%=h member.password %>
+</p>
+
+<% end %>
